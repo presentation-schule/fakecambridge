@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vollbildfoto</title>
+  <style>
+    /* Entfernt Standardabstände und sorgt dafür,
+       dass die Seite die gesamte Bildschirmfläche nutzt */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Das Bild füllt den gesamten Bildschirm
+       und wird bei Bedarf verzerrt (stretched) */
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: fill;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <img src="assets/IMG_0081.png" alt="Vollbildfoto" />
+</body>
+</html>
